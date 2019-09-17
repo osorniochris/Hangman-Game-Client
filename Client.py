@@ -101,7 +101,8 @@ if( word == "<win>\r\n"):
     print(" |       \|/\n")
     print("- -      / \ \n")
     print("G A N A S T E")
-    print(word)
+    word = cl.recv(1024).decode('utf-8')
+    print("PALABRA / ORACIÓN CORRECTA: " +word)
 elif ( word == "<fail>\r\n" ):
 
     word = cl.recv(1024).decode('utf-8')
